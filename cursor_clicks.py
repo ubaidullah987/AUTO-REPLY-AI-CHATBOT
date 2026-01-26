@@ -29,7 +29,7 @@ while True:
 
     if last_msg_sender(selected_text):
         client = OpenAI(
-                api_key="Api key",
+                api_key="Api key", # used api key of open AI
                 )
         response = client.responses.create(
                 model="gpt-5-nano",
@@ -48,5 +48,6 @@ while True:
 
         pyautogui.hotkey('ctrl', 'v')
         time.sleep(0.2)
+
 
         pyautogui.hotkey("enter")
